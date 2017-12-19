@@ -33,7 +33,7 @@ get_header(); ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<?php
-					get_template_part( 'content', 'home' );
+					get_template_part( 'modules/content/content', 'home' );
 				?>
 
 			<?php endwhile; ?>

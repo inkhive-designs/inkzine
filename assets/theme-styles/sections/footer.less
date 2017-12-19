@@ -1,0 +1,167 @@
+/* 8. Footer Widget Area
+-----------------------------------------------*/
+#footer-sidebar {
+  #footer-inner-wrapper {
+    background: fade(black,60%);
+  }
+  width: 100%;
+  color: white;
+  background: url(../../../images/pattern.jpg);
+  box-shadow: inset 0px 8px 12px -8px #4a4a4a;
+  padding: 0;
+  .font-footer;
+  a {
+    color: white;
+    font-weight: 300;
+    .font-footer;
+    -webkit-font-smoothing: antialiased;
+  }
+  h1.widget-title {
+    .font;
+    font-weight: 300;
+    margin-bottom: 25px;
+  }
+  ul {
+    margin-left: 35px;
+    -webkit-font-smoothing: antialiased;
+  }
+  .widget_inkzine_rp {
+    ul {
+      margin-left: 0px;
+      li.rp-item {
+        border-bottom: none;
+        img {
+          border: none;
+        }
+      }
+    }
+  }
+  ul {
+    list-style: none;
+    margin-left: 5px;
+    li:before {
+      margin-right: 5px;
+      content:"\f0da";
+      display: inline;
+      float: left;
+      font-family: "FontAwesome";
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    ul {
+      li:before {
+        content: "\f111";
+        font-size: 5px;
+        position: relative;
+        top: -2px;
+      }
+      margin-left: 15px;
+      ul {
+        margin-left: 5px;
+
+      }
+    }
+  }
+  .widget_recent_entries {
+    li:before {
+      content: "\f0f6";
+    }
+    li {
+      padding: 5px 0px;
+    }
+  }
+  .widget_recent_comments {
+    li:before {
+      content: "\f075";
+      font-size: 12px;
+      position: relative;
+      top: -1px;
+    }
+  }
+  .widget_calendar {
+    caption {
+      font-weight: bold;
+      margin-bottom: 7px;
+    }
+    table {
+      padding: 5px;
+      text-align:center;
+      background: #fff;
+    }
+    thead {
+      border-bottom: solid 1px @link-hover-color;
+      th {
+        background: #ddd;
+        padding: 5px;
+        text-align: center;
+      }
+    }
+    tr td {
+      padding: 8px !important;
+      background: #eee;
+      margin: 4px;
+      text-align: center;
+    }
+    #prev {
+      text-align: left;
+    }
+    #next {
+      text-align: right;
+    }
+  }
+  .rp-date {
+    font-size: 11px;
+    color: darken(white,5%);
+  }
+  .social-icon {
+    color: #fff;
+    margin-right: 5px;
+    float: right;
+    font-size: 22px;
+    transition: ease 0.4s all;
+    &:hover {
+      color: #ddd;
+
+    }
+  }
+  a:hover .social-icon {
+    text-decoration: none;
+  }
+  .widget_search {
+    input[type=text] {
+      background: none;
+      color: white;
+      border: solid 1px white;
+      width: 300px;
+      margin-left: 20px;
+    }
+    ::-webkit-input-placeholder {
+      color: #fff;
+      -webkit-font-smoothing: antialiased;
+    }
+    ::-moz-input-placeholder {
+      color: #fff;
+    }
+  }
+
+}
+
+
+
+/* 9. Footer
+------------------------------------------------------- */
+
+#colophon {
+  padding: 10px;
+  width: auto;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.sep {
+  font-size: 8px;
+  position: relative;
+  top: -2px;
+  padding: 0 5px;
+  color: #eee;
+}

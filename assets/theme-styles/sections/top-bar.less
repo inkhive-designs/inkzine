@@ -1,0 +1,53 @@
+/* 2. Top Bar
+------------------------------------------------------- */
+#top-bar {
+  background: @top-bar-bg;
+  position: relative;
+  z-index: 99999;
+  opacity: 1;
+  border-bottom: 2px solid #eee;
+}
+#top-bar .container {
+  position: relative;
+}
+#fixed-search {
+  position: absolute;
+  bottom: -40px;
+  right: 0;
+  background: #fff;
+  padding: 5px 20px;
+  box-shadow: 0 2px 2px #8a8a8a;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  .show-fake {
+    font-size: 22px;
+    padding: 5px;
+    i {
+      cursor: pointer;
+      position: relative;
+      left: -1px;
+    }
+  }
+  label {
+    margin-top: 2px;
+  }
+  input[type=text] {
+    display: none;
+    padding: 5px 0px;
+    padding-bottom: 6px;
+    padding-left: 10px;
+    outline: none;
+    border: none;
+  }
+  button.btn {
+    display: none;
+  }
+  .close-button {
+    font-size: 22px;
+    position: absolute;
+    bottom: -10px;
+    left: -5px;
+    display: none;
+    cursor: pointer;
+  }
+}

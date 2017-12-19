@@ -7,13 +7,12 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 	<div class="entry-content">
-		<!--
+
 <div class="featured-image-single">
 			<?php if (has_post_thumbnail() )
 				the_post_thumbnail();
 				?>
 		</div>
--->
 		<?php the_content(); ?>
 		<?php
 			wp_link_pages( array(
@@ -40,7 +39,7 @@
 				if ( '' != $tag_list ) {
 					$meta_text = __( '<span class="single-tags"> <i class="fa fa-tags"> </i> %2$s <span class="single-tags">', 'inkzine' );
 				} else {
-					$meta_text = __( '', 'inkzine' );
+					$meta_text = _e( '', 'inkzine' );
 				}
 
 			} else {

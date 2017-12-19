@@ -1,0 +1,78 @@
+/*--------------------------Universal-----------------------------	*/
+@import "../../../css/fonts/font-awesome/css/font-awesome.min.css";
+
+body {
+  background: #FFF;
+  overflow: hidden;
+}
+#main {
+  width: 100%;
+}
+.container {
+  margin: auto;
+}
+code {
+  white-space: pre-wrap !important;
+}
+.navbar-default .navbar-nav>li>a {
+  color: none;
+  &:hover {
+    color: none;
+  }
+}
+.font {
+  font-family: "Lato", Times, serif;
+  -webkit-font-smoothing: antialiased;
+}
+.font-heading {
+  font-family: "Armata", Arial, Helvetica, sans-serif;
+}
+.font-title {
+  font-family: "Armata", Helvetica, sans-serif;
+}
+.font-footer {
+  font-family: "Maven Pro", sans-serif;
+}
+//
+#parallax-bg {
+  position: fixed;
+  top:0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  background-size: cover;
+}
+#page {
+  position: relative;
+  z-index: 888;
+}
+#page ::selection {
+  background: @link-color;
+  color: white;
+}
+
+
+//
+/* 4. Links
+------------------------------------------------------- */
+
+a {
+  color: @link-color;
+}
+a:hover,
+a:focus,
+a:active {
+  color: @link-hover-color;
+}
+//
+/* 7. Content
+------------------------------------------------------- */
+
+#content {
+  background: white;
+  padding: none;
+  padding-top: 0px;
+  margin-right: 0px;
+  margin-left: 0px;
+}

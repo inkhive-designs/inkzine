@@ -1,0 +1,238 @@
+/* 7.2 Secondary
+------------------------------------------------------- */
+
+#secondary {
+  padding: 28px 10px;
+  ul {
+    list-style: none;
+    margin-left: 5px;
+    li:before {
+      display: inline;
+      float: left;
+      margin-right: 5px;
+      content:"\f0da";
+      font-family: "FontAwesome";
+      color: @sidebar-link-color;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    ul {
+      li:before {
+        content: "\f111";
+        font-size: 5px;
+        position: relative;
+        top: -3px;
+      }
+      margin-left: 15px;
+      ul {
+        margin-left: 5px;
+
+      }
+    }
+  }
+  .widget_recent_entries {
+    li:before {
+      content: "\f0f6";
+    }
+    li {
+      border-bottom: solid 1px @default-background;
+      padding: 5px 0px;
+    }
+  }
+  .widget_recent_comments {
+    li:before {
+      content: "\f075";
+      font-size: 12px;
+      position: relative;
+      top: -2px;
+    }
+  }
+  .widget_calendar {
+    caption {
+      font-weight: bold;
+      margin-bottom: 7px;
+    }
+    table {
+      padding: 5px;
+      text-align:center;
+      background: #fff;
+    }
+    thead {
+      border-bottom: solid 1px @link-hover-color;
+      th {
+        background: #ddd;
+        padding: 5px;
+        text-align: center;
+      }
+    }
+    tr td {
+      padding: 8px !important;
+      background: #eee;
+      margin: 4px;
+      text-align: center;
+    }
+    #prev {
+      text-align: left;
+    }
+    #next {
+      text-align: right;
+    }
+  }
+  .widget {
+    position: relative;
+  }
+  h1.widget-title {
+    .font;
+    font-size: 15px;
+    border-bottom: none;
+    background: @cat-4;
+    padding: 10px 15px;
+    display: inline-block;
+    color: white;
+    margin-left: 1px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    padding-right: 25px;
+    &:after {
+      height: 0;
+      width: 0;
+      position: absolute;
+      margin-left: 1px;
+
+    }
+
+  }
+  .rp-date {
+    font-size: 12px;
+  }
+  aside:nth-child(even) h1.widget-title {
+    background: @cat-5;
+    position: relative;
+    &:after {
+      content: "";
+      border-top: solid 12px darken(@cat-5,15%);
+      border-right: solid 22px transparent;
+      height: 0;
+      width: 0;
+      right: 0;
+      position: absolute;
+      bottom: -12px;
+    }
+  }
+  aside:nth-child(2) h1.widget-title {
+    background: @cat-5;
+    position: relative;
+    &:after {
+      content: "";
+      border-top: solid 12px darken(@cat-5,15%);
+      border-right: solid 22px transparent;
+      height: 0;
+      width: 0;
+      right: 0;
+      position: absolute;
+      bottom: -12px;
+    }
+  }
+  aside:nth-child(odd) h1.widget-title {
+    background: @cat-6;
+    position: relative;
+    &:after {
+      content: "";
+      border-top: solid 12px darken(@cat-6,15%);
+      border-right: solid 22px transparent;
+      height: 0;
+      width: 0;
+      right: 0;
+      position: absolute;
+      bottom: -12px;
+    }
+  }
+  aside:nth-child(3) h1.widget-title {
+    background: @cat-6;
+    position: relative;
+    &:after {
+      content: "";
+      border-top: solid 12px darken(@cat-6,15%);
+      border-right: solid 22px transparent;
+      height: 0;
+      width: 0;
+      right: 0;
+      position: absolute;
+      bottom: -12px;
+    }
+  }
+  aside:nth-child(4) h1.widget-title {
+    background: @cat-4;
+    position: relative;
+    &:after {
+      content: "";
+      border-top: solid 12px darken(@cat-4,15%);
+      border-right: solid 22px transparent;
+      height: 0;
+      width: 0;
+      right: 0;
+      position: absolute;
+      bottom: -12px;
+    }
+  }
+  aside:nth-child(5) h1.widget-title {
+    background: @cat-3;
+    position: relative;
+    &:after {
+      content: "";
+      border-top: solid 12px darken(@cat-3,15%);
+      border-right: solid 22px transparent;
+      height: 0;
+      width: 0;
+      right: 0;
+      position: absolute;
+      bottom: -12px;
+    }
+  }
+  aside:nth-child(1) h1.widget-title {
+    background: @cat-4;
+    position: relative;
+    &:after {
+      content: "";
+      border-top: solid 12px darken(@cat-4,15%);
+      border-right: solid 22px transparent;
+      height: 0;
+      width: 0;
+      right: 0;
+      position: absolute;
+      bottom: -12px;
+    }
+  }
+  .widget_search {
+    label {
+      width: 100%;
+    }
+    form {
+      width: 100%;
+      padding: 10px 5px;
+    }
+    input[type=submit] {
+      display: none;
+    }
+    input[type=text] {
+      display: block;
+      min-width: 100%;
+      margin-left: 20px;
+    }
+  }
+  select#cat {
+    margin-bottom: 10px;
+    margin-left: 10px;
+  }
+  .widget {
+    margin-top: 15px;
+    padding-top: 0px;
+    a {
+      color: @sidebar-link-color;
+    }
+  }
+  .widget > div {
+    padding: 7px;
+  }
+}

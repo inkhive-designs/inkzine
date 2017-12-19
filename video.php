@@ -56,7 +56,7 @@ get_header(); ?>
 				if ( '' != $tag_list ) {
 					$meta_text = __( '<i class="fa fa-tags"> </i> %2$s', 'inkzine' );
 				} else {
-					$meta_text = __( '', 'inkzine' );
+					$meta_text = _e( '', 'inkzine' );
 				}
 
 			} else {

@@ -1,4 +1,4 @@
-<?php if (of_get_option('showcase_enabled') != 0) { ?>
+<?php if (get_theme_mod('inkzine_showcase_enable_set') == true) { ?>
 	</div>
 	<div id="showcase">
 	<div class="container">
@@ -6,10 +6,10 @@
 			// WP_Query arguments
 			$qa = array (
 				'post_type'              => 'post',
-				'posts_per_page'		 => of_get_option('cat1_count'),
+				'posts_per_page'		 => get_theme_mod('inkzine_showcase_count1'),
 				'offset'				 => 0,
 				'ignore_sticky_posts'    => 1,
-				'cat'				     => of_get_option('cat1')
+				'cat'				     => get_theme_mod('inkzine_showcase_cat1')
 	
 			);
 			
@@ -17,7 +17,7 @@
 			$recent_articles = new WP_Query( $qa );
 			if($recent_articles->have_posts()) : ?>
 			<div class="showcase showcase-1 col-md-4 col-sm-4">
-			<div class="sc-heading"><?php echo of_get_option('cat1_title') ?></div>
+			<div class="sc-heading"><?php echo get_theme_mod('inkzine_showcase_title1') ?></div>
 			<ul class="sc">
 			<?php
 				while($recent_articles->have_posts()) : 
@@ -56,10 +56,10 @@
 			// WP_Query arguments
 			$qa = array (
 				'post_type'              => 'post',
-				'posts_per_page'		 => of_get_option('cat2_count'),
+                'posts_per_page'		 => get_theme_mod('inkzine_showcase_count2'),
 				'offset'				 => 0,
 				'ignore_sticky_posts'    => 1,
-				'cat'				     => of_get_option('cat2')
+                'cat'				     => get_theme_mod('inkzine_showcase_cat2')
 	
 			);
 			
@@ -67,7 +67,7 @@
 			$recent_articles = new WP_Query( $qa );
 			if($recent_articles->have_posts()) : ?>
 			<div class="showcase showcase-2 col-md-4 col-sm-4">
-			<div class="sc-heading"><?php echo of_get_option('cat2_title')?></div>
+			<div class="sc-heading"><?php echo get_theme_mod('inkzine_showcase_title2')?></div>
 			<ul class="sc">
 			<?php
 				while($recent_articles->have_posts()) : 
@@ -106,10 +106,10 @@
 			// WP_Query arguments
 			$qa = array (
 				'post_type'              => 'post',
-				'posts_per_page'		 => of_get_option('cat3_count'),
+                'posts_per_page'		 => get_theme_mod('inkzine_showcase_count3'),
 				'offset'				 => 0,
 				'ignore_sticky_posts'    => 1,
-				'cat'				     => of_get_option('cat3')
+                'cat'				     => get_theme_mod('inkzine_showcase_cat3')
 	
 			);
 			
@@ -117,7 +117,7 @@
 			$recent_articles = new WP_Query( $qa );
 			if($recent_articles->have_posts()) : ?>
 			<div class="showcase showcase-3 col-md-4 col-sm-4">
-			<div class="sc-heading"><?php echo of_get_option('cat3_title')  ?></div>
+			<div class="sc-heading"><?php echo get_theme_mod('inkzine_showcase_title3')  ?></div>
 			<ul class="sc">
 			<?php
 				while($recent_articles->have_posts()) : 

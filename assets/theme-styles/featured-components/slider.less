@@ -1,0 +1,151 @@
+/* 6. Slider
+-------------------------------------------------*/
+
+#slider-wrapper {
+  .bx-caption span{
+    font-size: 24px;
+    text-align: center;
+  }
+  margin: auto;
+  margin-top: 45px;
+  background: fade(white,80%);
+  padding-top: 15px;
+  margin-bottom: -10px;
+  .fa-angle-left {
+    margin-left: 20px;
+    color: white;
+    &:hover {
+      color: #eee;
+    }
+  }
+  .fa-angle-right {
+    margin-left: 45px;
+    color: white;
+    &:hover {
+      color: #eee;
+    }
+  }
+}
+.slide-title {
+  .font-heading;
+  color: #ddd;
+}
+.nivo-caption {
+  max-width: 750px;
+  min-width: 200px;
+  overflow: hidden;
+  bottom: 15px;
+  left: 10px;
+}
+
+.nivo-html-caption {
+  display: none;
+}
+div.slide-title {
+  font-size: 36px;
+  display: block;
+}
+div.slide-description {
+  font-family: Helvetica, Arial, sans-serif;
+}
+.nivo-imageLink {
+  z-index: 99999;
+}
+@media screen and (max-width: 768px) {
+  div.slide-title {
+    font-size: 18px;
+  }
+  div.slide-description {
+    font-size: 13px;
+  }
+}
+
+
+
+/* 5. Slider Wrapper
+------------------------------------------------------- */
+
+#slider-wrapper {
+  width: 100%;
+  ul {
+    margin-left: 0;
+    .bx-caption {
+      background: rgba(0,0,0,0.6);
+      .font-title;
+      padding-bottom: 10px;
+      font-size: 25px;
+      pointer-events: none;
+      text-align: center;
+    }
+    .bx-next {
+      margin-right: 15px;
+    }
+    .xslide {
+      width: 100%;
+      margin-left: 0px;
+    }
+    .bx-viewport {
+    }
+  }
+  .bx-wrapper {
+    .bx-controls-direction a.bx-next {
+      margin-right: 40px;
+    }
+  }
+  .bx-pager
+  {
+    .bx-page-item {
+      width: 35px;
+    }
+    .bx-pager-link {
+      width: 20px;
+      height: 8px;
+      border-radius: 1px;
+    }
+    .active {
+      background: red !important;
+    }
+  }
+  .bx-next {
+    background: none;
+    margin-right: 40px;
+    .c-nav-bg {
+      color: white;
+      font-size: 42px;
+      margin-top: 21px;
+    }
+  }
+  .bx-prev {
+    background: none;
+    margin-left: -19px;
+    .c-nav-bg {
+      color: white;
+      font-size: 42px;
+      margin-top: 21px;
+    }
+  }
+  .bx-controls-direction a {
+    text-indent: 0px;
+    font-size: 42px;
+    top:40%;
+    opacity: 0.8;
+  }
+  .bx-viewport {
+    /* 			box-shadow: none; */
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #slider-wrapper {
+    ul {
+      .bx-caption {
+        font-size: 13px;
+      }
+    }}
+}
+
+.bx-wrapper .bx-caption span{
+  font-size: 24px;
+  text-align: center;
+}
+
