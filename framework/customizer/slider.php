@@ -1,5 +1,5 @@
 <?php
-// SLIDER PANEL
+ //SLIDER PANEL
 function inkzine_customize_register_main_slider( $wp_customize ) {
     $wp_customize->add_panel( 'inkzine_slider_panel', array(
         'priority'       => 60,
@@ -52,10 +52,6 @@ function inkzine_customize_register_main_slider( $wp_customize ) {
         )
     );
 
-
-
-
-
     if ( get_theme_mod('inkzine_main_slider_count') > 0 ) :
         $slides = get_theme_mod('inkzine_main_slider_count');
 
@@ -73,7 +69,6 @@ function inkzine_customize_register_main_slider( $wp_customize ) {
                     $wp_customize,
                     'inkzine_slide_img'.$i,
                     array(
-                        'label' => '',
                         'section' => 'inkzine_slide_sec'.$i,
                         'settings' => 'inkzine_slide_img'.$i,
                     )

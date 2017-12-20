@@ -39,7 +39,7 @@ function inkzine_customize_register_layouts( $wp_customize ) {
             )
         )
     );
-    
+
     //custom CSS
     /* Active Callback Function */
     class inkzine_Custom_CSS_Control extends WP_Customize_Control
@@ -72,7 +72,7 @@ function inkzine_customize_register_layouts( $wp_customize ) {
         'inkzine_custom_css',
         array(
             'default' => '',
-            'sanitize_callback' => 'inkzine_sanitize_text'
+            'sanitize_callback' => 'sanitize_text_field'
         )
     );
 
@@ -87,10 +87,10 @@ function inkzine_customize_register_layouts( $wp_customize ) {
         )
     );
 
-    function inkzine_sanitize_text($input)
-    {
-        return wp_kses_post(force_balance_tags($input));
-    }
+//    function inkzine_sanitize_text($input)
+//    {
+//        return wp_kses_post(force_balance_tags($input));
+//    }
     //footer text
     $wp_customize-> add_section(
         'inkzine_custom_footer',

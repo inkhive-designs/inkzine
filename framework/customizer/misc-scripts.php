@@ -11,7 +11,7 @@ function inkzine_customize_register_misc( $wp_customize ) {
 
     $wp_customize->add_setting(
         'inkzine_upgrade',
-        array( 'sanitize_callback' => 'esc_textarea' )
+        array( 'sanitize_callback' => 'sanitize_text_field' )
     );
 
     $wp_customize->add_control(

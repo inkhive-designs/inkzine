@@ -1,5 +1,5 @@
 <?php
-// Social Icons
+ //Social Icons
 function inkzine_customize_register_social( $wp_customize ) {
     $wp_customize->add_section('inkzine_social_section', array(
         'title' => __('Social Icons','inkzine'),

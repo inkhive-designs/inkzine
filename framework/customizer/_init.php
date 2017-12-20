@@ -28,6 +28,7 @@ function inkzine_customize_register( $wp_customize ) {
 
     $wp_customize->add_setting( 'inkzine_title_color', array (
         'default'	=> '#a7a7a7',
+        'sanitize_callback'	=> 'sanitize_text_field'
     ) );
 
     $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'inkzine_title_color', array(
@@ -39,6 +40,7 @@ function inkzine_customize_register( $wp_customize ) {
 
     $wp_customize->add_setting( 'inkzine_desc_color', array (
         'default'	=> '#ff8a00',
+        'sanitize_callback'	=> 'sanitize_text_field'
     ) );
 
     $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'inkzine_desc_color', array(
@@ -70,12 +72,12 @@ endif;
 
 add_action( 'wp_head', 'inkzine_apply_color' );
 
+require_once get_template_directory().'/framework/customizer/_sanitization.php';
 require_once get_template_directory().'/framework/customizer/header.php';
-require_once get_template_directory().'/framework/customizer/slider.php';
+    require_once get_template_directory().'/framework/customizer/slider.php';
 require_once get_template_directory().'/framework/customizer/misc-scripts.php';
 require_once get_template_directory().'/framework/customizer/social.php';
 require_once get_template_directory().'/framework/customizer/ticker.php';
-require_once get_template_directory().'/framework/customizer/_sanitization.php';
 require_once get_template_directory().'/framework/customizer/layouts.php';
 require_once get_template_directory().'/framework/customizer/showcase.php';
 
@@ -86,3 +88,6 @@ function inkzine_customize_preview_js() {
     wp_enqueue_script( 'inkzine_customizer', get_template_directory_uri() . '/js/customizer.js', array( 'customize-preview' ), '20130508', true );
 }
 add_action( 'customize_preview_init', 'inkzine_customize_preview_js' );
+
+
+

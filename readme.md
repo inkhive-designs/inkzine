@@ -4,7 +4,7 @@
 **Requires at least:** WordPress 4.4  
 **Tested up to:** WordPress 4.9
 **Stable tag:** 1.1.1 
-**Version:** 1.1.1
+**Version:** 1.1.0
 **License:** GPL v3  
 **Tags:** custom-background,
           one-column, 
@@ -143,8 +143,9 @@ Version 1.0.4 ( Major Design Update)
 	vi) Removed Lightbox
 	vii) Added SlipHover & Modernizr
 
-Version 1.0.5
+Version 1.1.0
 
     i) Many Changes to Look and Feel
     ii) Framework updated
     iii) Slider bug fixed
+    iv) Switch to new framework.
